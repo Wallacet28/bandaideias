@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Contrato para Banda Musical</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <header class="container-fluid bg-dark py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Banda Musical XYZ</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#historia">História</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="container my-5" id="historia">
+        <h1 class="text-center mb-4">Nossa História</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <p>A Banda Musical XYZ foi formada em 2010 por um grupo de amigos que tinham uma paixão em comum: a música. Desde então, a banda tem se apresentado em diversas cidades do país e conquistado uma legião de fãs.</p>
+                <p>Nosso repertório inclui músicas de diversos gêneros, como rock, pop, funk e samba. Além disso, somos conhecidos por nossas performances enérgicas e animadas, que fazem com que o público dance e se divirta.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://via.placeholder.com/500x500" class="img-fluid">
+            </div>
+        </div>
+    </section>
+    
+    <section class="container my-5" id="contato">
+        <h1 class="text-center mb-4">Contato</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Informações de Contato</h2>
+                <p>Entre em contato conosco para solicitar um contrato ou para mais informações sobre a nossa banda:</p>
+                <ul>
+                    <li>Telefone: (11) 1234-5678</li>
+                    <li>E-mail: contato@bandamusicalxyz.com.br</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Formulário de Contrato</h2>
+                <form method="POST" action="enviar_contrato.php">
+                <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" class="form-control" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                <label for="evento">Tipo de Evento</label>
+                <select class="form-control" id="evento" name="evento" required>
+                <option value="">Selecione</option>
+                <option value="Casamento">Casamento</option>
+                <option value="Aniversário">Aniversário</option>
+                <option value="Formatura">Formatura</option>
+                <option value="Outro">Outro</option>
+                </select>
+                </div>
+                <div class="form-group">
+                <label for="data">Data do Evento</label>
+                <input type="date" class="form-control" id="data" name="data" required>
+                </div>
+                <div class="form-group">
+                <label for="horario">Horário de Início</label>
+                <input type="time" class="form-control" id="horario" name="horario" required>
+                </div>
+                <div class="form-group">
+                <label for="local">Local do Evento</label>
+                <input type="text" class="form-control" id="local" name="local" required>
+                </div>
+                <div class="form-group">
+                <label for="mensagem">Mensagem Adicional</label>
+                <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Contrato</button>
+                </form>
+                </div>
+                </div>
+                </section>
+                
+                <section class="container my-5">
+                    <h1 class="text-center mb-4">Fotos e Vídeos</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/500x500" class="img-fluid mb-4">
+                            <img src="https://via.placeholder.com/500x500" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="embed-responsive embed-responsive-16by9 mb-4">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <footer class="container-fluid bg-dark py-3">
+                    <div class="container text-white text-center">
+                        <p>Copyright © 
+                        <?php echo date("Y"); ?> Banda Musical XYZ. Todos os direitos        

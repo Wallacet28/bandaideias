@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro de Banda de Música</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<!-- Cabeçalho -->
+	<header class="jumbotron text-center">
+		<h1>Toca Tudo</h1>
+		<p>Contrate a melhor banda de música para o seu evento!</p>
+		<img src="imagem-da-banda.jpg" class="img-fluid" alt="Foto da Banda">
+	</header>
+
+	<!-- Formulário de Cadastro -->
+	<div class="container">
+		<form method="POST" action="processa-formulario.php">
+			<div class="form-group">
+				<label for="nome">Nome:</label>
+				<input type="text" class="form-control" id="nome" name="nome" required>
+			</div>
+			<div class="form-group">
+				<label for="email">E-mail:</label>
+				<input type="email" class="form-control" id="email" name="email" required>
+			</div>
+			<div class="form-group">
+				<label for="telefone">Telefone:</label>
+				<input type="tel" class="form-control" id="telefone" name="telefone" required>
+			</div>
+			<div class="form-group">
+				<label for="evento">Tipo de Evento:</label><br>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="evento" value="casamento">Casamento
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="evento" value="aniversario">Aniversário
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="evento" value="formatura">Formatura
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="evento" value="festa-aberta">Festa Aberta
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="evento" value="festa-fechada">Festa Fechada
+					</label>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+    
+    <!-- Vídeo da Banda -->
+    <section class="container-fluid">
+        <h2>Veja a nossa apresentação ao vivo:</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div>
+    </section>
+    
+    <!-- História da Banda -->
+    <section class="container">
+        <h2>Nossa História</h2>
+        <p>A Toca Tudo é uma banda de música formada em 2010, com o objetivo de oferecer um repertório variado para os mais diversos tipos de eventos. Desde então, já realizamos inúmeras apresentações em casamentos, aniversários, formaturas e festas de todos os tipos.</p>
+        <p>Com uma formação de seis músicos talentosos e experientes, somos capazes de tocar vários estilos musicais, como rock, pop, sertanejo, funk, entre outros. Nosso principal diferencial é a animação e interação com o público, garantindo que a festa seja um sucesso!</p>
+    </section>
+    
+    <!-- Rodapé -->
+    <footer class="jumbotron text-center">
+        <p>&copy; 2023 Toca Tudo</p>
+        <p>
+            <a href="#">Contrato de Casamento</a> |
+            <a href="#">Contrato de Aniversário</a> |
+            <a href="#">Contrato de Formatura</a> |
+            <a href="#">Contrato de Festa Aberta</a> |
+            <a href="#">Contrato de Festa Fechada</a>
+        </p>
+    </footer>
+    </body>
+</html>

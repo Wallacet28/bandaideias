@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Banda</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css"
+          integrity="sha512-sJ/Ky/91p+GGepB5NKNg+nN2TkZ+3QLNcNweZxME0zo4kIX4YChYFg2cn84ovJ4dXOZIysbsoaM5KOnItWMJ5Q=="
+          crossorigin="anonymous"/>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Minha Banda</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#historia">História</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#agenda">Agenda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contato">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="jumbotron jumbotron-fluid bg-secondary text-white">
+    <div class="container">
+        <h1 class="display-4">Minha Banda</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget risus vitae nunc
+            consectetur porttitor. Nunc congue augue sit amet enim posuere interdum.</p>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XHNnCQLoZdY"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+</header>
+
+<!-- História -->
+<section id="historia" class="container my-5">
+    <h2 class="text-center">Nossa História</h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget risus vitae nunc consectetur porttitor.
+        Nunc congue augue sit amet enim posuere interdum. Praesent maximus velit et dolor bibendum, vel euismod nisl
+        lobortis. Nulla tempus malesuada risus, eu facilisis mauris porttitor sed.fermentum tincidunt. Curabitur eu tellus sapien. Praesent blandit, mauris vel imperdiet euismod, mi enim
+        vestibulum elit, quis tincidunt purus tortor vel risus. Duis consequat elementum massa, non fermentum orci
+        facilisis ac.</p>
+    <p>Nam et arcu eu leo interdum malesuada eu ac purus. Etiam a leo velit. Etiam vehicula sed enim eget
+            vestibulum. Sed scelerisque felis sed eros elementum viverra. Integer tristique ex sed nulla pharetra,
+            ac venenatis quam interdum. Sed hendrerit aliquet arcu ac venenatis. Sed vestibulum, urna a bibendum
+            laoreet, est augue varius enim, ut aliquam ipsum magna a orci. Praesent bibendum, libero nec rutrum
+            vulputate, purus leo aliquam justo, eget ultrices diam odio non mauris. Donec consectetur varius nisl,
+            vitae consequat ex sagittis a. Nulla facilisi. Curabitur posuere tincidunt lacus, at cursus enim feugiat
+            a.
+    </p>
+
+
+</section>
+<!-- Agenda -->
+<section id="agenda" class="container my-5">
+    <h2 class="text-center">Agenda de Shows</h2>
+    <hr>
+    <div id="calendar"></div>
+</section>
+<!-- Contato -->
+<section id="contato" class="container my-5">
+    <h2 class="text-center">Entre em Contato</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <form method="POST" action="enviar_email.php">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <p>Entre em contato conosco para agendar shows, solicitar orçamentos ou tirar dúvidas:</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Email: contato@minhabanda.com</p>
+            <p>Endereço: Rua da Banda, 123 - São Paulo/SP</p>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-white py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p class="mb-0">&copy; 2023 Minha Banda. Todos os direitos reservados.</p>
+            </div>
+            <div class="col-md-6 text-right">
+                <a href="#">Política de Privacidade</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- jQuery-->
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/pt-br.js"></script>
+<script>
+        $(document).ready(function() {
+// Inicializa o calendário
+        $('#calendar').fullCalendar({
+            header: {
+                 left: 'prev,next today',
+                center: 'title',
+                 right: 'month,agendaWeek,agendaDay'
+                 },
+                defaultDate: '2023-03-01',
+                navLinks: true,
+                 editable: false,
+                 eventLimit: true, // allow "more" link when too many events
+                events: [
+                {
+                title: 'Show da Minha Banda',
+                start: '2023-03-01T20:00:00',
+                end: '2023-03-01T23:00:00',
+                description: 'Show na Praça da Sé',
+                url: 'https://www.minhabanda.com/show-na-praca-da-se'
+                 },
+                 {
+                title: 'Show da Minha Banda',
+                start: '2023-03-08T20:00:00',
+                end: '2023-03-08T23:00:00',
+                 description: 'Show no Parque do Ibirapuera',
+                 url: 'https://www.minhabanda.com/show-no-parque-do-ibirapuera'
+                 },
+                {
+                title: 'Show da Minha Banda',
+                 start: '2023-03-15T20:00:00', 
+                 end: '2023-03-15T23:00:00',
+                description: 'Show no SESC Belenzinho',
+                url: 'https://www.minhabanda.com/show-no-sesc-belenzinho'
+                }
+                // adicione mais eventos aqui
+                ]
+            });
+        });
+</script>
+</body>
+</html>

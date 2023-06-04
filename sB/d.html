@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banda XYZ</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- FullCalendar CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Banda XYZ</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- História da banda -->
+                <h1 class="mb-4">Banda XYZ</h1>
+                <img src="https://via.placeholder.com/500x300" class="img-fluid mb-4" alt="Foto da banda">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed turpis vel erat posuere fermentum. Aliquam quis neque nec mauris molestie consectetur a ac eros. Vestibulum pulvinar lectus sed libero maximus, ut tristique enim accumsan. Aliquam ac rhoncus quam. Praesent ac volutpat sapien, eget rhoncus sapien. Aliquam erat volutpat. Suspendisse potenti. Etiam ac ultricies sapien. Etiam suscipit eget turpis quis consectetur. Integer volutpat nisl a blandit pretium. Sed lacinia id neque at pharetra. Phasellus dictum, enim eget luctus imperdiet, risus ipsum finibus felis, ac pulvinar sem libero quis risus.</p>
+
+                <p>Phasellus vel faucibus nulla. Sed pharetra, justo eu tempor dignissim, sapien leo egestas elit, non euismod elit mauris non velit. Fusce non magna gravida, consectetur orci sed, vulputate sapien. Etiam sed congue turpis. Pellentesque ac arcu elementum, aliquam eros sed, vulputate elit. Suspendisse potenti. Nam sodales, sem ut vulputate bibendum, sapien enim dictum metus, sit amet suscipit metus libero ac ex. Fusce ut ex quis enim scelerisque lacinia. In semper vehicula odio, eget elementum lacus rhoncus vel. Sed nec tincidunt ante, non molestie eros. Vivamus euismod justo non risus bibendum, vel semper est euismod. Donec et tortor nec nulla iaculis iaculis. Donec interdum, magna vitae faucibus ullamcorper, metus dolor faucibus justo, id semper ante ex ac velit. Praesent nec elit elit. Fusce id est ex. Nulla eget tristique nisi. Nullam eu orci vel quam feugiat dignissim eu sed erat.</p>
+            </div>    
+        </div>    
+    </div>
+    
+    <!-- Vídeo da banda -->
+    <h2 class="mt-5">Assista ao nosso vídeo</h2>
+    <div class="embed-responsive embed-responsive-16by9 mt-4">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+</div>
+<div class="col-md-4">
+    <!-- Calendário de shows -->
+    <h3 class="mb-4">Próximos shows</h3>
+    <div id="calendar"></div>
+</div>
+</div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-light text-center py-4">
+<p class="mb-0">&copy; 2023 Banda XYZ</p>
+</footer>
+
+<!-- jQuery, Popper.js, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+<!-- FullCalendar JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+<script>
+$(document).ready(function() {
+// Inicializa o calendário
+$('#calendar').fullCalendar({
+    events: [
+        {
+            title: 'Show 1',
+            start: '2023-03-01',
+            end: '2023-03-01'
+        },
+        {
+            title: 'Show 2',
+            start: '2023-03-15',
+            end: '2023-03-15'
+        },
+        {
+            title: 'Show 3',
+            start: '2023-03-22',
+            end: '2023-03-22'
+        }
+    ],
+    eventColor: '#e74c3c'
+});
+});
+</script>
+</body>
+</html>

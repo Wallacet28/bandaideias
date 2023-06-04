@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banda Musical</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#home" id="menu-home">Home</a></li>
+        <li><a href="#sobre" id="menu-sobre">Sobre Nós</a></li>
+        <li><a href="#shows" id="menu-shows">Shows</a></li>
+        <li><a href="#contato" id="menu-contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h1>Banda Musical</h1>
+      <p>Seja bem-vindo ao nosso site!</p>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma banda de rock formada em 2010. Tocamos em bares, festas e eventos em geral. Temos um repertório variado que vai desde clássicos do rock até músicas autorais.</p>
+      <p>Nossos integrantes:</p>
+      <ul>
+        <li>João (vocal)</li>
+        <li>Maria (guitarra)</li>
+        <li>Carlos (baixo)</li>
+        <li>Pedro (bateria)</li>
+      </ul>
+    </section>
+
+    <section id="shows">
+      <h2>Shows</h2>
+      <p>Confira nossas próximas apresentações:</p>
+      <ul>
+        <li>15/03 - Bar do Zé (São Paulo)</li>
+        <li>22/03 - Festa de Aniversário (Campinas)</li>
+        <li>29/03 - Evento Beneficente (São Bernardo do Campo)</li>
+      </ul>
+      <p>Para agendar um show, preencha o formulário abaixo:</p>
+      <form id="form-agendamento">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="data">Data do evento:</label>
+        <input type="date" id="data" name="data" required />
+
+        <label for="local">Local do evento:</label>
+        <input type="text" id="local" name="local" required />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Entre em contato conosco:</p>
+      <ul>
+        <li>Telefone: (11) 5555-5555</li>
+        <li>E-mail: contato@bandamusical.com</li>
+      </ul>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+
+</html>  

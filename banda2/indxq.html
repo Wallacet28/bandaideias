@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Show</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Sobre nós</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Cadastro de Show</h1>
+        <p>Preencha o formulário abaixo para cadastrar um show.</p>
+      </section>
+      <section class="show-form">
+        <h2>Informações do Show</h2>
+        <form action="submit.php" method="POST">
+          <label for="nome">Nome do Artista:</label>
+          <input type="text" name="nome" required>
+
+          <label for="data">Data do Show:</label>
+          <input type="date" name="data" required>
+
+          <label for="local">Local do Show:</label>
+          <input type="text" name="local" required>
+
+          <label for="imagem">Imagem do Artista:</label>
+          <input type="file" name="imagem" required>
+
+          <label for="video">Vídeo do Artista:</label>
+          <input type="text" name="video" required>
+
+          <button type="submit">Cadastrar Show</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

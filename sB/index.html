@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Toca Tudo - Cadastro de Banda de Música</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+	<!-- Cabeçalho -->
+	<header class="container">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Toca Tudo</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">História</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#fotos-e-videos">Fotos e Vídeos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#agendar-contrato">Agendar Contrato</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contato">Contato</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- História -->
+	<section class="container">
+		<h2>História</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<img src="https://via.placeholder.com/500x500" class="img-fluid">
+			</div>
+			<div class="col-md-8">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed lacinia, ex eget viverra vulputate, nulla felis aliquam metus, ac efficitur magna elit ut nibh. Sed suscipit massa sed purus dictum, eu faucibus lectus sollicitudin. Donec non dolor vel nulla auctor sodales. Sed vitae faucibus justo, eget bibendum enim.</p>
+			</div>
+		</div>
+	</section>
+
+    !-- Fotos e Vídeos -->
+    <section class="container">
+	    <h2>Fotos e Vídeos</h2>
+	    <div class="row">
+		    <div class="col-md-4">
+			    <a href="https://via.placeholder.com/500x500">
+				    <img src="https://via.placeholder.com/500x500" class="img-fluid">
+			    </a>
+		    </div>
+		    <div class="col-md-4">
+			    <a href="https://via.placeholder.com/500x500">
+				    <img src="https://via.placeholder.com/500x500" class="img-fluid">
+			    </a>
+		    </div>
+		    <div class="col-md-4">
+			    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+				    <img src="https://via.placeholder.com/500x500" class="img-fluid">
+			    </a>
+		    </div>
+	    </div>
+    </section>
+
+    <!-- Agendar Contrato -->
+    <section class="container" id="agendar-contrato">
+	    <h2>Agendar Contrato</h2>
+	    <form action="#" method="post">
+		    <div class="form-group">
+			    <label for="nome-banda">Nome da Banda</label>
+			    <input type="text" name="nome-banda" id="nome-banda" class="form-control" required>
+	    	</div>
+		    <div class="form-group">
+			    <label for="genero">Gênero Musical</label>
+			    <input type="text" name="genero" id="genero" class="form-control" required>
+		    </div>
+		    <div class="form-group">
+			    <label for="data">Data do Evento</label>
+			    <input type="date" name="data" id="data" class="form-control" required>
+	    	</div>
+		    <div class="form-group">
+			    <label for="local">Local do Evento</label>
+			    <input type="text" name="local" id="local" class="form-control" required>
+		    </div>
+		    <button type="submit" class="btn btn-primary">Agendar</button>
+    	</form>
+    </section>
+
+<!-- Contato -->
+    <section class="container" id="contato">
+    	<h2>Contato</h2>
+	    <form action="#" method="post">
+		    <div class="form-group">
+			    <label for="nome">Nome</label>
+			    <input type="text" name="nome" id="nome" class="form-control" required>
+	    	</div>
+		    <div class="form-group">
+			    <label for="email">E-mail</label>
+			    <input type="email" name="email" id="email" class="form-control" required>
+	    	</div>
+		    <div class="form-group">
+			    <label for="mensagem">Mensagem</label>
+			    <textarea name="mensagem" id="mensagem" rows="5" class="form-control" required></textarea>
+	    	</div>
+		    <button type="submit" class="btn btn-primary">Enviar</button>
+    	</form>
+    </section>
+
+<!-- Rodapé -->
+        <footer class="container text-center mt-5">
+	    <p>&copy; 2023 Toca Tudo</p>
+        </footer>
+
+<!-- Scripts -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

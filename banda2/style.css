@@ -1,0 +1,73 @@
+/* Estilos gerais */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  section {
+    padding: 50px 10%;
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+  }
+  
+  /* Estilos específicos da seção de agendamento */
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  button {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  #error-msg {
+    color: red;
+  }
+  
+  #success-msg {
+    color: green;
+  }

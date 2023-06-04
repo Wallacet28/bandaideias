@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banda XYZ - Agenda de Shows</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.print.min.css" media="print">
+
+    <style>
+        /* Estilo para o cabeçalho */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* Estilo para o calendário */
+        #calendar {
+            margin-top: 30px;
+        }
+
+        /* Estilo para o rodapé */
+        footer {
+            background-color: #222;
+            color: #fff;
+        }
+
+        /* Estilo para as imagens */
+        .img-fluid {
+            max-width: 100%;
+        }
+
+        /* Estilo para o texto sobre a banda */
+        .banda {
+            margin: 30px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Banda XYZ</h1>
+                </div>
+                <div class="col-md-6 text-right">
+                    <p>Contato: contato@bandaxyz.com.br</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <!-- Foto da banda -->
+                <img src="https://via.placeholder.com/800x400" alt="Foto da banda" class="img-fluid">
+
+                <!-- Texto sobre a banda -->
+                <div class="banda">
+                    <h2>Sobre a banda</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc blandit venenatis nibh, a eleifend purus tincidunt eu. Etiam at quam a mauris bibendum egestas. Etiam eget semper justo. Vivamus consequat nisi in congue varius. Fusce viverra, magna et interdum imperdiet, enim velit elementum quam, non consectetur nibh nunc non nisl. Sed lacinia arcu ut mauris feugiat bibendum.</p>
+
+                    <p>Nullam non augue ut leo venenatis vehicula. Pellentesque et erat sapien. Nulla posuere eros ut semper posuere. Sed ut nibh vel quam bibendum feugiat id at ipsum. Donec aliquam lobortis augue, id tincidunt ipsum eleifend eget. Praesent lobortis finibus felis, at bibendum orci pretium et. Nam auctor, sapien ac varius consequat, orci elit rhoncus elit, eget consequat tellus odio eu enim.</p>
+
+                    <p>Nullam imperdiet venenatis neque. Integer malesuada, lacus a congue rutrum, nunc lorem tincidunt est, nec vestibulum augue turpis eget justo. Nulla vel ligula ac diam blandit vestibulum. Proin viverra nisi purus, non pulvinar lorem malesuada vitae. Aenean auctor lectus vel quam iaculis euismod. Fusce vitae augue ut lectus laoreet fermentum sed a lectus.</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+                <!-- Vídeo da banda -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+                </div>
+            </div>
+    
+            <div class="col-md-4">
+                <!-- Calendário -->
+                <div id="calendar"></div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>© 2023 Banda XYZ. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/fullcalendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendar').fullCalendar({
+                events: [
+                    {
+                        title: 'Show no Barzinho da Esquina',
+                        start: '2023-03-01',
+                        end: '2023-03-01'
+                    },
+                    {
+                        title: 'Show no Teatro Municipal',
+                        start: '2023-03-15',
+                        end: '2023-03-16'
+                    },
+                    {
+                        title: 'Show no SESC',
+                        start: '2023-03-29',
+                        end: '2023-03-29'
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
